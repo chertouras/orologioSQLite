@@ -1,0 +1,145 @@
+﻿<Page
+    x:Class="winphonesqlite.HubTeacherPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:winphonesqlite"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+   
+    DataContext="{Binding DefaultViewModel , RelativeSource={RelativeSource Self}}"
+     mc:Ignorable="d">
+
+
+
+  
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Hub Header="Ατομικό Πρόγραμμα Εκπαιδευτικού" >
+            <HubSection Header="Δευτέρα" DataContext="{Binding Deytera}" MinWidth="600">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10,10,10,17.5" Orientation="Horizontal">
+                                    <TextBlock Margin="10" Text="{Binding tmimaonoma}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                    <TextBlock Margin="10" Style="{ThemeResource ListViewItemTextBlockStyle}" >
+                                    <Run Text="{Binding ora}" ></Run>
+                                    <Run Text="η ώρα" FontSize="15"></Run>
+                                    </TextBlock>
+
+                                    <TextBlock Margin="10" Text="{Binding onomamath}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Τρίτη"  DataContext="{Binding Triti}" MinWidth="600">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10,10,10,17.5" Orientation="Horizontal">
+                                    <TextBlock Margin="10" Text="{Binding tmimaonoma}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                    <TextBlock Margin="10"  Style="{ThemeResource ListViewItemTextBlockStyle}" >
+
+                                      
+                                        <Run Text="{Binding ora}" ></Run>
+                                        <Run Text="η ώρα" FontSize="15"></Run>
+
+                                    </TextBlock>
+
+
+
+                                    <TextBlock Margin="10" Text="{Binding onomamath}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Τετάρτη"  DataContext="{Binding Tetarti}" MinWidth="600">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10,10,10,17.5" Orientation="Horizontal">
+                                    <TextBlock Margin="10" Text="{Binding tmimaonoma}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                    <TextBlock Margin="10"  Style="{ThemeResource ListViewItemTextBlockStyle}" >
+
+                                      
+                                        <Run Text="{Binding ora}" ></Run>
+                                        <Run Text="η ώρα" FontSize="15"></Run>
+
+                                    </TextBlock>
+                                    <TextBlock Margin="10" Text="{Binding onomamath}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Πέμπτη"  DataContext="{Binding Pempti}" MinWidth="600">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10,10,10,17.5" Orientation="Horizontal">
+                                    <TextBlock Margin="10" Text="{Binding tmimaonoma}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                    <TextBlock Margin="10"  Style="{ThemeResource ListViewItemTextBlockStyle}" >
+
+                                      
+                                        <Run Text="{Binding ora}" ></Run>
+                                        <Run Text="η ώρα" FontSize="15"></Run>
+
+                                    </TextBlock>
+                                    <TextBlock Margin="10" Text="{Binding onomamath}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="Παρασκευή"  DataContext="{Binding Paraskeyi}" MinWidth="600">
+                <DataTemplate>
+                    <ListView ItemsSource="{Binding}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="10,10,10,17.5" Orientation="Horizontal">
+                                    <TextBlock Margin="10" Text="{Binding tmimaonoma}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                    <TextBlock Margin="10"  Style="{ThemeResource ListViewItemTextBlockStyle}" >
+
+                                      
+                                        <Run Text="{Binding ora}" ></Run>
+                                        <Run Text="η ώρα" FontSize="15"></Run>
+
+                                    </TextBlock>
+                                    <TextBlock Margin="10" Text="{Binding onomamath}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+
+        </Hub>
+
+
+    </Grid>
+</Page>
